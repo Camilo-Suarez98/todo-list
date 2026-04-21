@@ -13,6 +13,7 @@
 		9A5C86DB2F95B1FF00E25FF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5C86DA2F95B1FF00E25FF8 /* Preview Assets.xcassets */; };
 		9A5C86E32F95B68A00E25FF8 /* ToDoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C86E22F95B68A00E25FF8 /* ToDoExtensions.swift */; };
 		9A5C86E52F95B80D00E25FF8 /* ToDoRoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C86E42F95B80D00E25FF8 /* ToDoRoundedCorner.swift */; };
+		9AB025012F9708FC00EB083B /* ToDoTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB025002F9708FC00EB083B /* ToDoTextInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		9A5C86DA2F95B1FF00E25FF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A5C86E22F95B68A00E25FF8 /* ToDoExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoExtensions.swift; sourceTree = "<group>"; };
 		9A5C86E42F95B80D00E25FF8 /* ToDoRoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRoundedCorner.swift; sourceTree = "<group>"; };
+		9AB025002F9708FC00EB083B /* ToDoTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTextInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				9A5C86E22F95B68A00E25FF8 /* ToDoExtensions.swift */,
 				9A5C86E42F95B80D00E25FF8 /* ToDoRoundedCorner.swift */,
+				9AB025002F9708FC00EB083B /* ToDoTextInput.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB025012F9708FC00EB083B /* ToDoTextInput.swift in Sources */,
 				9A5C86E32F95B68A00E25FF8 /* ToDoExtensions.swift in Sources */,
 				9A5C86D62F95B1FD00E25FF8 /* ContentView.swift in Sources */,
 				9A5C86E52F95B80D00E25FF8 /* ToDoRoundedCorner.swift in Sources */,
