@@ -7,9 +7,24 @@
 
 import SwiftUI
 
-struct ToDoAddView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+public struct ToDoAddView: View {
+    public var todo: ToDoEntity? = nil
+    
+    public var body: some View {
+        VStack(spacing: 16) {
+            Spacer()
+            
+            Button {
+                
+            } label: {
+                Text("Guardar".uppercased())
+                    .font(.headline)
+                    .tint(.primary)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .clipShape(.rect(cornerRadius: 10))
+            }
+        }
     }
 }
 
