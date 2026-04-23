@@ -7,9 +7,14 @@
 
 import SwiftUI
 
-struct ToDoArchivedListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+public struct ToDoArchivedListView: View {
+    public var body: some View {
+        ScrollView {
+            
+        }
+        .padding(.top, 16)
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Archivadas")
     }
 }
 
