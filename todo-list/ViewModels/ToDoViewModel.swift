@@ -57,8 +57,15 @@ public final class ToDoViewModel: ObservableObject {
         return true
     }
     
-    public func addToDO() {
-        
+    public func addToDo(withTitle title: String, note: String, date: Date) {
+        let newToDo = ToDoEntity(context: storeContainer.viewContext)
+        newToDo.id = UUID().uuidString
+        newToDo.title = title
+        newToDo.note = note
+        newToDo.date = date
+        newToDo.isComplete = false
+        newToDo.isArchieved = false
+        saveData()
     }
     
     public func updateToDo () {

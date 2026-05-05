@@ -8,6 +8,8 @@
 import SwiftUI
 
 public struct ToDoListView: View {
+    @State private var showedSheet = false
+    
     let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 8),
         GridItem(.flexible(), spacing: 8)
@@ -20,7 +22,12 @@ public struct ToDoListView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .overlay {
-                
+                if showedSheet {
+                    ToDoSheet(isShow: $showedSheet) {
+                        ToDoAddView(showed: $showedSheet)
+                    }
+                    .ignoresSafeArea()
+                }
             }
         }
         .navigationTitle("ToDos")
@@ -35,7 +42,7 @@ public struct ToDoListView: View {
                             .foregroundStyle(.primary)
                     }
                     Button {
-                        
+                        showedSheet.toggle()
                     } label: {
                         Image(systemName: "plus")
                             .font(.system(size: 20, weight: .semibold))
